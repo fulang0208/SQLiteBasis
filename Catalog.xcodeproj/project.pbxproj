@@ -16,6 +16,10 @@
 		77C68B601C33979100D75B8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C68B5E1C33979100D75B8C /* LaunchScreen.storyboard */; };
 		77C68B6B1C33979100D75B8C /* CatalogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C68B6A1C33979100D75B8C /* CatalogTests.m */; };
 		77C68B761C33979100D75B8C /* CatalogUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C68B751C33979100D75B8C /* CatalogUITests.m */; };
+		77C68B851C339BA500D75B8C /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C68B841C339BA500D75B8C /* Product.m */; };
+		77C68B8B1C339D6200D75B8C /* catalog.db in Resources */ = {isa = PBXBuildFile; fileRef = 77C68B8A1C339D6200D75B8C /* catalog.db */; };
+		77C68B8E1C339EE500D75B8C /* DBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C68B8D1C339EE500D75B8C /* DBAccess.m */; };
+		77C68B901C33A33700D75B8C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C68B8F1C33A33700D75B8C /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,12 @@
 		77C68B711C33979100D75B8C /* CatalogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C68B751C33979100D75B8C /* CatalogUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatalogUITests.m; sourceTree = "<group>"; };
 		77C68B771C33979100D75B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77C68B831C339BA500D75B8C /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		77C68B841C339BA500D75B8C /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		77C68B8A1C339D6200D75B8C /* catalog.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = catalog.db; sourceTree = "<group>"; };
+		77C68B8C1C339EE500D75B8C /* DBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAccess.h; sourceTree = "<group>"; };
+		77C68B8D1C339EE500D75B8C /* DBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAccess.m; sourceTree = "<group>"; };
+		77C68B8F1C33A33700D75B8C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77C68B901C33A33700D75B8C /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +95,7 @@
 		77C68B411C33979100D75B8C = {
 			isa = PBXGroup;
 			children = (
+				77C68B8F1C33A33700D75B8C /* libsqlite3.0.tbd */,
 				77C68B4C1C33979100D75B8C /* Catalog */,
 				77C68B691C33979100D75B8C /* CatalogTests */,
 				77C68B741C33979100D75B8C /* CatalogUITests */,
@@ -115,6 +127,10 @@
 				77C68B5E1C33979100D75B8C /* LaunchScreen.storyboard */,
 				77C68B611C33979100D75B8C /* Info.plist */,
 				77C68B4D1C33979100D75B8C /* Supporting Files */,
+				77C68B831C339BA500D75B8C /* Product.h */,
+				77C68B841C339BA500D75B8C /* Product.m */,
+				77C68B8C1C339EE500D75B8C /* DBAccess.h */,
+				77C68B8D1C339EE500D75B8C /* DBAccess.m */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -122,6 +138,7 @@
 		77C68B4D1C33979100D75B8C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				77C68B8A1C339D6200D75B8C /* catalog.db */,
 				77C68B4E1C33979100D75B8C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -249,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77C68B601C33979100D75B8C /* LaunchScreen.storyboard in Resources */,
+				77C68B8B1C339D6200D75B8C /* catalog.db in Resources */,
 				77C68B5D1C33979100D75B8C /* Assets.xcassets in Resources */,
 				77C68B5B1C33979100D75B8C /* Main.storyboard in Resources */,
 			);
@@ -276,7 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				77C68B521C33979100D75B8C /* AppDelegate.m in Sources */,
+				77C68B851C339BA500D75B8C /* Product.m in Sources */,
 				77C68B551C33979100D75B8C /* MasterViewController.m in Sources */,
+				77C68B8E1C339EE500D75B8C /* DBAccess.m in Sources */,
 				77C68B4F1C33979100D75B8C /* main.m in Sources */,
 				77C68B581C33979100D75B8C /* DetailViewController.m in Sources */,
 			);
